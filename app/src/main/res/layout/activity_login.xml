@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="#E1EDCD"
+    tools:context=".Login">
+
+    <ImageView
+        android:paddingBottom="30dp"
+        android:layout_width="400dp"
+        android:layout_height="108dp"
+        android:paddingTop="10sp"
+        android:src="@drawable/applogo" />
+
+    <TextView
+        android:text=":-: Welcome to Perryfields Academy :-:"
+        android:padding="2dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:background="#DE0F69"
+        android:textColor="@color/white"
+        android:paddingTop="10sp"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:layout_width="241dp"
+        android:layout_height="259dp"
+        android:layout_marginTop="25sp"
+        android:layout_marginBottom="25sp"
+        android:padding="15dp"
+        android:src="@drawable/login" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#EF076D"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"
+        android:text="@string/login" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/password"
+            android:hint="@string/Password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/btn_login"
+        android:text="@string/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/registerNow"
+        android:text="@string/click_to_register"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
